@@ -6,25 +6,25 @@
 }
 
 body {
-    /* font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" */
     font-family: Heiti TC, Microsoft JhengHei, Helvetica, Arial, sans-serif;
 }
 
 .wrap {
     max-width: 1024px;
-    height: 1000px;
     margin: 0 auto;
 }
 
-/* header 區 */
+/* header section -------------------------------------------------------*/
 
 .header{
     margin-top: 50px;
+    /* background-color: skyblue; */
 }
 
 .topmenu{
     float: right;
     padding-right: 20px;
+    padding-top: 10px;
 }
 .topmenu img{
     padding-right: 5px;
@@ -37,18 +37,17 @@ body {
 .topmenu li a{
     display: block;
     text-decoration: none;
-    padding-right: 10px;
+    padding: 0 10px;
     color: #555554;
     font-size: 14px;
     font-weight: bold;
-    padding-bottom: 5px;
-}
-.topmenu span{
-    padding-left: 15px;
+    padding-bottom: 5px;    
 }
 .topmenu .text_color1{
     color: #4460a0;
+    border-right: 0.1px solid #cccccc;
 }
+
 .topmenu .text_color2{
     color: #00aaec;
 }
@@ -75,16 +74,15 @@ body {
     background-size: contain;
     background: url(../images/log_1.png) center center no-repeat;
 }
-.headmenu ul{
+.headmenu .menu ul{
     float: right;
-    height: 25px;
-    display: inline-block;
 }
 .headmenu ul li{
     float: left;
 }
 .menu li a{
     display: block;
+    height: 30px;
     text-decoration: none;
     color: #00cc99;
     font-size: 15px;
@@ -94,7 +92,6 @@ body {
     padding: 0 8px;
     margin-left: 40px;
     margin-top: 20px;
-    padding-bottom: 11px;
 }
 .fa_mr{
     margin-right: 5px;
@@ -105,10 +102,10 @@ body {
     border-bottom: 3px solid #00cc99;
 }
 
+/* banner section ------------------------------------------------------- */
+
 .banner{
-    width: 1024px;
     height: 344px;
-    margin-top: 24px;
     background-color: #000;
     background: url(../images/banner.jpg) right bottom no-repeat;
     padding-top: 130px;
@@ -124,13 +121,14 @@ h1{
     padding: 20px;
 }
 
+/* content section ----------------------------------------------------------------*/
+
 .content {
     margin: 60px auto;
-    padding: 0 20px;
 }
 
 .class{
-    width: 30%;
+    width: 30.4%;
     height: 380px;
     padding: 30px 20px;
     margin: 0 15px;
@@ -187,8 +185,10 @@ h1{
     padding-left: 15px;
 }
 
+/* compare section ----------------------------------------------------------------*/
+
 .compare{
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .compare h2{
@@ -198,11 +198,9 @@ h1{
 }
 
 .chart_list{
-    padding: 30px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 40px;
+    padding-left: 120px;
 }
 
 .chart_list thead th{
@@ -226,10 +224,13 @@ h1{
     color: #007b5c;
 }
 
+/* contact section -------------------------------------------------------------*/
+
 .contact{
-    margin-top: 20px;
-    height: 405px;
-    background: #0dbab0; 
+    margin-top: 60px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    background: #0dbab0;
     background: -webkit-linear-gradient(left top, #0dbab0, #0db4e5); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, #0dbab0, #0db4e5); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, #0dbab0, #0db4e5); /* For Firefox 3.6 to 15 */
@@ -240,25 +241,22 @@ h1{
     text-align: center;
     line-height: 1.5;
     color: #fff;
-    padding: 20px;
+    padding-bottom: 25px;
 }
 
-.contact .form_css{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+ .clearfix{
+    overflow: auto;
+ }
+
+.contact .info_textarea{
+    float: left;
+    width: 50%;
+    padding-left: 45px;
 }
 
-.contact .info_1{
-    margin: 20px;
-}
-
-.contact .info_2{
-    margin: 20px;
+.contact .info_input{
+    float: left;
+    width: 45%;
     color: #fff;
     line-height: 2;
 }
@@ -269,7 +267,7 @@ h1{
 .form_css input[type="number"],
 .form_css textarea{
     padding: 0.6em 0.6em;
-    display: inline-block;
+    /* display: inline-block; */
     border: 1px solid #ccc;
     box-shadow: inset 0 1px 3px #ddd;
     border-radius: 4px;
@@ -288,7 +286,7 @@ h1{
 
 
 .contact .textstyle {
-     width: 450px;
+     width: 100%;
 }
 .contact .btn {
     font-family: Heiti TC, Microsoft JhengHei, Helvetica, Arial, sans-serif;
@@ -303,7 +301,7 @@ h1{
     text-decoration: none;
     border-radius: 4px;
     float: right;
-    box-shadow: 5px
+    box-shadow: 5px;
     -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
@@ -318,12 +316,15 @@ h1{
     -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
+/* footer section ---------------------------------------------------------------*/
+
 .footer{
-    height: 120px;
     padding-top: 20px;
     padding-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .footer .logo2{
